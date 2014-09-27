@@ -23,10 +23,11 @@ if($nom != null && $prenom != null && $pays != null){
     date_default_timezone_set('Europe/Paris');
     $dateNow = date('d/m/y', time());
 
-    $req = "insert into tdf_coureur values($n_coureur, :nom, :prenom, null, '$pays', null, 'ETU', to_date('$dateNow'))";
+    $req = "insert into tdf_coureur values($n_coureur, :nom, :prenom, null, '$pays', null, :etu, to_date('$dateNow'))";
     $cur = oci_parse($conn, $req);
     oci_bind_by_name($cur, ":nom", $nom);
     oci_bind_by_name($cur, ":prenom", $prenom);
+    oci_bind_by_name($cur, ":etu", formatNom($_SESSION['user']));
     oci_execute($cur, OCI_DEFAULT);
 
     if($annee_n != null && $cur){

@@ -10,11 +10,11 @@ require "functions/inputRules.php";
 require "functions/getter.php";
 require "functions/tdf.php";
 
-/*session_start();
+session_start();
 
-if (!isset($_SESSION['logged_in']) && basename($_SERVER["PHP_SELF"]) != "login.php") {
+if (!isset($_SESSION['user']) && basename($_SERVER["PHP_SELF"]) != "login.php") {
     header("Location: login.php");
-}*/
+}
 
 $conn = OuvrirConnexion('system', 'root','xe');
 if(!isset($title))
@@ -35,4 +35,15 @@ if(!isset($title))
             <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         </head>
         <body>
-            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="preview.php">Preview</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="addCoureur.php">AddCoureur</a>
+            <a href="index.php">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="preview.php">Preview</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="addCoureur.php">AddCoureur</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<?php
+if (isset($_SESSION["user"])) {
+?>
+            <form style="display: inline" action="login.php" method="post">
+                <input name="logout" type="submit" value="Logout">
+            </form>
+            <?php
+}
+?>
