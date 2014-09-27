@@ -40,4 +40,39 @@ inscrits
 - Les noms des épreuves sont codés comme les noms des coureurs . Les chiffres sont autorisés,
 - Les noms des sponsors sont écrits en majuscule sans accent : tous les caractères (même ceux de contrôle) sont
 autorisés.
+
 Attention aux suppressions et modifications : l'intégrité référentielle doit être préservée.
+
+### L'application minimale :
+- proposera des formulaires d'ajout d'information dans la base
+- empêchera l'inscription de données déjà présentes dans la base
+- empêchera l'inscription de données absurdes
+
+### Plusieurs options peuvent permettre d'améliorer l'application
+- une page générale proposant tous les ajouts
+- des menus déroulant d'aide à la saisie
+- l'affichage des données inscrites avant enregistrement définitif dans la table des scripts de vérification des données saisies
+- le calcul automatique des identifiants
+- amélioration de la présentation par des feuilles de style
+- journal des transactions et des éventuelles erreurs
+- possibilité de visualiser voire de corriger la base
+- identification de l'utilisateur (gestion de la sécurité)
+- consultations variées des données TDF
+
+#### Dans un souci d'efficacité chaque binôme développera (dans l'ordre) le formulaire coureur + (s’il est parfait)
+
+- faible difficulté :
+    - formulaire année
+    - formulaire épreuve
+- moyenne difficulté :
+    - formulaire sponsor
+    - formulaire équipe
+    - formulaire pays
+- grande difficulté :
+    - formulaire participation des équipes *[avec lien sur création d'équipe et pays]*
+    - formulaire participation des coureurs *[avec lien sur création de coureur et pays]*
+- complet :
+    - tous les formulaires sauf abandon, typeaban, temps, ordrequi
+- méga complet :
+    - possibilité en mode « non connecté » de visualiser de nombreuses informations de la base TDF
+(liste des gagnants d'étapes , liste des coureurs français , classement général, liste des sponsors ...)
