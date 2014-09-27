@@ -50,7 +50,7 @@ foreach($tab as $key => $val) {
         <td><?php echo $val['COMPTE_ORACLE']; ?></td>
         <td><?php echo $val['DATE_INSERT']; ?></td>
         <td><?php if(!hasParticipation($conn, $val['N_COUREUR'])){?>
-            <form action="preview.php" method="post">
+            <form onsubmit="return confirm('Etes vous sûr de vouloir supprimer ce coureur?');" action="preview.php" method="post">
                 <input name="NumC" type="hidden" value="<?php echo $val['N_COUREUR']; ?>">
                 <input name="delete" type="submit" value="X">
             </form>
