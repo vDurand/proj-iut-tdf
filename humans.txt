@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    DURAND Valentin -- TD3 TP5 -- 2A DUT Info
+    LE BAS Jérémie -- TD3 TP5 -- 2A DUT Info
 
 # THANKS
 
-    <name>
+    M. Porcq
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    Javascript, jQuery, PHP

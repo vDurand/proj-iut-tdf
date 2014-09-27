@@ -1,61 +1,43 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# [TDF MAJ](http://www.iutc3.unicaen.fr/)
 
-HTML5 Boilerplate is a professional front-end template for building fast,
-robust, and adaptable web apps or sites.
+L'objectif est de réaliser un ou plusieurs formulaires de mise à jour des tables du tour de France. Le langage utilisé sera le PHP et la présentation sera faite en HTML.
 
-This project is the product of many years of iterative development and combined
-community knowledge. It does not impose a specific development philosophy or
-framework, so you're free to architect your code in the way that you want.
+## Préparation des tables des tours 2015 à XXXX
 
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Homepage: [http://html5boilerplate.com](http://html5boilerplate.com)
-* Twitter: [@h5bp](http://twitter.com/h5bp)
+- TDF_COUREUR :
+    - On ne peut supprimer un coureur qui possède des participations au tour de France,
+    - Une modification ne peut concerner le numéro de coureur,
+    - Les champs : nom,prenom et code_tdf sont obligatoires,
+    - num_coureur est calculé,
+    - les noms des coureurs sont écrits en majuscule sans accent. Les tirets (dont 1 double tiret), espaces isolés
+sont autorisés mais pas au début et à la fin. Les apostrophes sont autorisées. Les caractères autorisés sont
+ceux de l'alphabet français (sans ligature),
+    - les prénoms des coureurs sont écrits en minuscule sauf les premières lettres de chaque mot, codée en
+majuscule sans accent. Les tirets et espaces isolés sont autorisés mais ni au début, ni à la fin,
 
+- TDF_SPONSOR
+    - Est considéré comme nouveau sponsor une « équipe » dont le nom exact + nom abrégé (ou code_tdf) n'est
+pas ou plus dans la liste des sponsors actifs. Le sponsor actif est le dernier sponsor d'une équipe qui n'a pas
+disparue. Créer un nouveau sponsor consiste à « remplacer » (par ajout d'un nouveau sponsor) l'ancien
+sponsor par le nouveau.
 
-## Quick start
+- TDF_EQUIPE
+    - Quand une nouvelle équipe est créée, un nouveau sponsor lui est associé.
 
-Choose one of the following options:
+- TDF_EQUPE_ANNEE
+    - Cette table contient la participation des équipes au tour de France. Seuls les sponsors actifs peuvent être
+inscrits
+    - Au moins un directeur est associé à cette participation.
+    - Un directeur ne peut participer au même tour de France avec plusieurs sponsors
 
-1. Download the latest stable release from
-   [html5boilerplate.com](http://html5boilerplate.com/) or a custom build from
-   [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the tagged
-   release you'd like to use.
+- TDF_PARTICIPATION
+    - Les coureurs peuvent être inscrits dans les équipes elles-mêmes participantes.
+    - 9 coureurs peuvent être inscrits dans chaque équipe
+    - les dossards d'une équipe appartient à la même dizaine (de X1 à X9)
+    - les dossards doivent être uniques à chaque tour de France
+    - un coureur ne peut-être inscrit à plusieurs tours de France la même année
 
-
-## Features
-
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Opera, Safari, Firefox 3.6+, IE6+).
-* Designed with progressive enhancement in mind.
-* Includes [Normalize.css](http://necolas.github.com/normalize.css/) for CSS
-  normalizations and common bug fixes.
-* The latest [jQuery](http://jquery.com/) via CDN, with a local fallback.
-* The latest [Modernizr](http://modernizr.com/) build for feature detection.
-* IE-specific classes for easier cross-browser control.
-* Placeholder CSS Media Queries.
-* Useful CSS helpers.
-* Default print CSS, performance optimized.
-* Protection against any stray `console.log` causing JavaScript errors in
-  IE6/7.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for
-  Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
-
-
-## Documentation
-
-Take a look at the [documentation table of contents](doc/TOC.md). This
-documentation is bundled with the project, which makes it readily available for
-offline reading and provides a useful starting point for any documentation you
-want to write about your project.
-
-
-## Contributing
-
-Anyone and everyone is welcome to [contribute](CONTRIBUTING.md). Hundreds of
-developers have helped make the HTML5 Boilerplate what it is today.
+- Les noms des épreuves sont codés comme les noms des coureurs . Les chiffres sont autorisés,
+- Les noms des sponsors sont écrits en majuscule sans accent : tous les caractères (même ceux de contrôle) sont
+autorisés.
+Attention aux suppressions et modifications : l'intégrité référentielle doit être préservée.
