@@ -7,15 +7,19 @@
  */
 $title = "Liste des Coureurs";
 include ('header.php');
+if(isset($_POST['delete'])){
+    $NumC = postGetter("NumC");
+    if($NumC != null){
+        $req = "DELETE FROM tdf_coureur WHERE N_COUREUR = $NumC";
+        $cur = ExecuterRequete($conn, $req);
+        $committed = oci_commit($conn);
+    }
+}
+
 echo "<h1>Coureurs</h1>";
 $req = 'SELECT * FROM tdf_coureur order by n_coureur desc';
 $cur = ExecuterRequete($conn, $req);
-echo "<hr>";
 $nbLigne = LireDonnees1($cur, $tab);
-/*echo "<pre>";
-echo print_r($tab);
-echo "</pre>";*/
-echo "<hr>";
 ?>
 <table style="text-align: center;">
     <tr>
@@ -27,6 +31,7 @@ echo "<hr>";
         <td>ANNEE_TDF</td>
         <td>COMPTE_ORACLE</td>
         <td>DATE_INSERT</td>
+        <td> </td>
     </tr>
 <?php
 foreach($tab as $key => $val) {
@@ -44,6 +49,13 @@ foreach($tab as $key => $val) {
         <td><?php echo $val['ANNEE_TDF']; ?></td>
         <td><?php echo $val['COMPTE_ORACLE']; ?></td>
         <td><?php echo $val['DATE_INSERT']; ?></td>
+        <td><?php if(!hasParticipation($conn, $val['N_COUREUR'])){?>
+            <form action="preview.php" method="post">
+                <input name="NumC" type="hidden" value="<?php echo $val['N_COUREUR']; ?>">
+                <input name="delete" type="submit" value="X">
+            </form>
+            <?php } ?>
+        </td>
     </tr>
 <?php
 }

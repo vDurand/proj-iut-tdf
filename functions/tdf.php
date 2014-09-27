@@ -13,3 +13,14 @@ function getNCoureurMax($conn)
     $nbLigne = LireDonnees1($cur, $tab);
     return $tab[0]['MAX'];
 }
+
+function hasParticipation($conn, $ncoureur)
+{
+    $req = "select N_DOSSARD from TDF_PARTICIPATION where N_COUREUR = $ncoureur";
+    $cur = ExecuterRequete($conn, $req);
+    $nbLigne = LireDonnees1($cur, $tab);
+    if(empty($tab))
+        return false;
+    else
+        return true;
+}
