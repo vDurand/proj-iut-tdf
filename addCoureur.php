@@ -18,28 +18,30 @@ $annee_tdf = postGetter("annee_tdf");
 
 if($nom != null && $prenom != null && $pays != null){
 
-    $n_coureur = getNCoureurMax($conn)+1;
+    $coureur = array('NOM' => $nom, 'PRENOM' => $prenom, 'PAYS' => $pays, 'A_NAI' => $annee_n, 'A_TDF' => $annee_tdf);
+    if(!existingCoureur($conn, $coureur)){
+        $n_coureur = getNCoureurMax($conn)+1;
 
-    date_default_timezone_set('Europe/Paris');
-    $dateNow = date('d/m/y', time());
+        date_default_timezone_set('Europe/Paris');
+        $dateNow = date('d/m/y', time());
 
-    $req = "insert into tdf_coureur values($n_coureur, :nom, :prenom, null, '$pays', null, :etu, to_date('$dateNow'))";
-    $cur = oci_parse($conn, $req);
-    oci_bind_by_name($cur, ":nom", $nom);
-    oci_bind_by_name($cur, ":prenom", $prenom);
-    oci_bind_by_name($cur, ":etu", formatNom($_SESSION['user']));
-    oci_execute($cur, OCI_DEFAULT);
+        $req = "insert into tdf_coureur values($n_coureur, :nom, :prenom, null, '$pays', null, :etu, to_date('$dateNow'))";
+        $cur = oci_parse($conn, $req);
+        oci_bind_by_name($cur, ":nom", $nom);
+        oci_bind_by_name($cur, ":prenom", $prenom);
+        oci_bind_by_name($cur, ":etu", formatNom($_SESSION['user']));
+        oci_execute($cur, OCI_DEFAULT);
 
-    if($annee_n != null && $cur){
-        $req = "UPDATE tdf_coureur SET ANNEE_NAISSANCE = $annee_n WHERE N_COUREUR = $n_coureur";
-        $cur = ExecuterRequete($conn, $req);
-    }
-    if($annee_tdf != null && $cur){
-        $req = "UPDATE tdf_coureur SET ANNEE_TDF = $annee_tdf WHERE N_COUREUR = $n_coureur";
-        $cur = ExecuterRequete($conn, $req);
-    }
-    $committed = oci_commit($conn);
-    if($cur){
+        if($annee_n != null && $cur){
+            $req = "UPDATE tdf_coureur SET ANNEE_NAISSANCE = $annee_n WHERE N_COUREUR = $n_coureur";
+            $cur = ExecuterRequete($conn, $req);
+        }
+        if($annee_tdf != null && $cur){
+            $req = "UPDATE tdf_coureur SET ANNEE_TDF = $annee_tdf WHERE N_COUREUR = $n_coureur";
+            $cur = ExecuterRequete($conn, $req);
+        }
+        $committed = oci_commit($conn);
+        if($cur){
 ?>
             <h1>Coureur ajoute avec succes</h1>
             <table>
@@ -69,6 +71,10 @@ if($nom != null && $prenom != null && $pays != null){
                 </tr>
             </table>
 <?php
+        }
+    }
+    else{
+        echo "<h1>Coureur déjà présent dans la base</h1>";
     }
 }
 else{
