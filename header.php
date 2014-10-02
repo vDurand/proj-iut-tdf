@@ -38,7 +38,8 @@ if(!isset($title))
         <body>
             <a href="index.php">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="preview.php">Preview</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="addCoureur.php">AddCoureur</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="addCoureur.php">Ajouter Coureur</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="addAnnee.php">Ajouter Année</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <?php
 if (isset($_SESSION["user"])) {
 ?>

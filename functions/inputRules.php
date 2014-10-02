@@ -66,6 +66,13 @@ function removeAccents($txt){
     return $txt;
 }
 
+// http://godefroy.me/php-enlever-tous-les-accents-d-une-chaine-a192614
+function removeWeirdChar($txt){
+    mb_regex_encoding('UTF-8');
+    $txt = mb_ereg_replace('[€&$%£#@§!.,:]', '', $txt);
+    return $txt;
+}
+
 // Retire les accents des premieres lettre de chaque mot
 function firstNoAccent($a)
 {
@@ -96,14 +103,19 @@ function firstNoAccent($a)
 // formatage du nom
 function formatNom($nom)
 {
-    return strtoupper(noAccents(trim(firstNoAccent(removeAccents($nom)), " -")));
+    return strtoupper(noAccents(trim(firstNoAccent(removeAccents(removeWeirdChar($nom))), " -")));
 }
 
 // formatage du prenom
 function formatPrenom($prenom)
 {
-    return trim(firstNoAccent(removeAccents($prenom)), " -");
+    return trim(firstNoAccent(removeAccents(mb_convert_case(removeWeirdChar($prenom), MB_CASE_TITLE, "UTF-8"))), " -");
 }
+/*$tab = array("Ébé-ébé","ébé-ébé","ébé-Ébé","éÉé-Ébé","'éÉ'é-É'bé'","'éæé-É'bé'", "'éæé-É'Ŭé'", "'é !é-É'Ŭé'", "éé''éé--uù  gg", "DE LA TR€UC", "DE LA TRUC", "ééééééééééééééééééééééééééééééééééééééééééééééé");
+foreach($tab as $tab){
+    echo $tab."=".formatPrenom($tab)."<br>";
+    echo $tab."=".formatNom($tab)."<br><br>";
+}*/
 //$tt = " -- - qios'sd uud- dsd-  - -";
 //echo formatPrenom($tt)."<br>";
 //echo formatNom($tt);

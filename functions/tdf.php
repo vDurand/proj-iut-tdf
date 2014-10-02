@@ -78,3 +78,30 @@ function addCoureur($conn, $coureur)
     $committed = oci_commit($conn);
     return $cur;
 }
+
+function addAnnee($conn, $annee, $j_repos)
+{
+    $dateNow = date('d/m/y', time());
+    $req = "select * from TDF_ANNEE where ANNEE = :annee";
+    $cur = oci_parse($conn, $req);
+    oci_bind_by_name($cur, ":annee", $annee);
+    oci_execute($cur, OCI_DEFAULT);
+    $nbLigne = LireDonnees1($cur, $tab);
+    if(empty($tab)) {
+        $req = "insert into tdf_annee values(:annee, :repos, :etu, to_date('$dateNow'))";
+        $cur = oci_parse($conn, $req);
+        oci_bind_by_name($cur, ":annee", $annee);
+        oci_bind_by_name($cur, ":repos", $j_repos);
+        oci_bind_by_name($cur, ":etu", formatNom($_SESSION['user']));
+        oci_execute($cur, OCI_DEFAULT);
+    }
+    else {
+        $req = "UPDATE tdf_annee SET JOUR_REPOS = :repos WHERE ANNEE = :annee";
+        $cur = oci_parse($conn, $req);
+        oci_bind_by_name($cur, ":annee", $annee);
+        oci_bind_by_name($cur, ":repos", $j_repos);
+        oci_execute($cur, OCI_DEFAULT);
+    }
+    $committed = oci_commit($conn);
+    return $cur;
+}
