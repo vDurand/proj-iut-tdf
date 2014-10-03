@@ -8,8 +8,8 @@
 $title = "Ajout Coureur";
 include ('header.php');
 
-//$pattern = "[AZERTYUIOPQSDFGHJKLMWXCVBNazertyuiopqsdfghjklmwxcvbnéèçàùôûî' -]{2,20}";
-$pattern = "[a-zA-Z'- ]{2,20}";
+$pattern = "[AZERTYUIOPQSDFGHJKLMWXCVBNazertyuiopqsdfghjklmwxcvbnéèçàùôûî' -]{2,20}";
+//$pattern = "[a-zA-Z'- ]{2,20}";
 
 $nom = formatNom(postGetter("nom"));
 $prenom = formatPrenom(postGetter("prenom"));

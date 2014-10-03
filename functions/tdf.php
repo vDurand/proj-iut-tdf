@@ -54,9 +54,7 @@ function existingCoureur($conn, $coureur)
 function addCoureur($conn, $coureur)
 {
     $n_coureur = $coureur['N_C'];
-
     $dateNow = date('d/m/y', time());
-
     $req = "insert into tdf_coureur values($n_coureur, :nom, :prenom, null, :pays, null, :etu, to_date('$dateNow'))";
     $cur = oci_parse($conn, $req);
     oci_bind_by_name($cur, ":nom", $coureur['NOM']);
@@ -102,6 +100,42 @@ function addAnnee($conn, $annee, $j_repos)
         oci_bind_by_name($cur, ":repos", $j_repos);
         oci_execute($cur, OCI_DEFAULT);
     }
+    $committed = oci_commit($conn);
+    return $cur;
+}
+
+function existingEpreuve($conn, $epreuve)
+{
+    $req = "select ANNEE from tdf_epreuve where ANNEE = :annee and N_EPREUVE = :nepreuve";
+    $cur = oci_parse($conn, $req);
+    oci_bind_by_name($cur, ":annee", $epreuve['ANNEE']);
+    oci_bind_by_name($cur, ":nepreuve", $epreuve['NEPREUVE']);
+    oci_execute($cur, OCI_DEFAULT);
+    $nbLigne = LireDonnees1($cur, $tab);
+    if(empty($tab))
+        return false;
+    else
+        return true;
+}
+
+function addEpreuve($conn, $epreuve)
+{
+    $dateNow = date('d/m/y', time());
+    $jour = date('d/m/y', strtotime($epreuve['JOUR']));
+    $req = "insert into tdf_epreuve values(:annee, :nepreuve, :villed, :villea, :dist, :moy, :tdfd, :tdfa, to_date('$jour'), :cat, :etu, to_date('$dateNow'))";
+    $cur = oci_parse($conn, $req);
+    oci_bind_by_name($cur, ":annee", $epreuve['ANNEE']);
+    oci_bind_by_name($cur, ":nepreuve", $epreuve['NEPREUVE']);
+    oci_bind_by_name($cur, ":villed", $epreuve['VDEP']);
+    oci_bind_by_name($cur, ":villea", $epreuve['VARR']);
+    oci_bind_by_name($cur, ":dist", number_format($epreuve['DIST'], 1, ',', ''));
+    oci_bind_by_name($cur, ":moy", number_format($epreuve['MOY'], 3, ',', ''));
+    oci_bind_by_name($cur, ":tdfd", $epreuve['PDEP']);
+    oci_bind_by_name($cur, ":tdfa", $epreuve['PARR']);
+    //oci_bind_by_name($cur, ":jour", $epreuve['JOUR']);
+    oci_bind_by_name($cur, ":cat", $epreuve['CAT']);
+    oci_bind_by_name($cur, ":etu", formatNom($_SESSION['user']));
+    oci_execute($cur, OCI_DEFAULT);
     $committed = oci_commit($conn);
     return $cur;
 }

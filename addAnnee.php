@@ -11,7 +11,10 @@ include ('header.php');
 $annee = postGetter("annee");
 $j_repos = postGetter("repos");
 
-if($annee != null && $j_repos != null){
+if($j_repos == null)
+    $j_repos = 0;
+
+if($annee != null){
 
     $cur = addAnnee($conn, $annee, $j_repos);
     if($cur){

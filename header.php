@@ -40,6 +40,7 @@ if(!isset($title))
             <a href="preview.php">Preview</a>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="addCoureur.php">Ajouter Coureur</a>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="addAnnee.php">Ajouter Année</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="addEpreuve.php">Ajouter Epreuve</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <?php
 if (isset($_SESSION["user"])) {
 ?>
