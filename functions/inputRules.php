@@ -88,21 +88,21 @@ function firstNoAccent($a)
     $i=0;
     foreach($b as $key => $val){
         $d = $d.strtoupper(noAccents(mb_substr($val, 0, 1, 'UTF-8'))).mb_substr($val, 1, mb_strlen($val), 'UTF-8');
-        $d = trim($d)." ";
+        $d = trim($d, " '-")." ";
     }
     $b = explode ("-", trim($d));
     $d=" ";
     $i=0;
     foreach($b as $key => $val){
         $d = $d.strtoupper(noAccents(mb_substr($val, 0, 1, 'UTF-8'))).mb_substr($val, 1, mb_strlen($val), 'UTF-8');
-        $d = trim($d, "-")."-";
+        $d = trim($d, "- '")."-";
     }
     $b = explode ("'", trim($d));
     $d=" ";
     $i=0;
     foreach($b as $key => $val){
         $d = $d.strtoupper(noAccents(mb_substr($val, 0, 1, 'UTF-8'))).mb_substr($val, 1, mb_strlen($val), 'UTF-8');
-        $d = trim($d, "'")."'";
+        $d = trim($d, "'- ")."'";
     }
     return trim($d, "'- ");
 }
@@ -110,13 +110,13 @@ function firstNoAccent($a)
 // formatage du nom
 function formatNom($nom)
 {
-    return strtoupper(noAccents(trim(firstNoAccent(removeAccents(removeWeirdChar(removeNumber($nom)))), " -")));
+    return mb_substr(strtoupper(noAccents(trim(firstNoAccent(removeAccents(removeWeirdChar(removeNumber($nom)))), " -"))), 0, 20, 'UTF-8');
 }
 
 // formatage du prenom
 function formatPrenom($prenom)
 {
-    return trim(firstNoAccent(removeAccents(mb_convert_case(removeWeirdChar(removeNumber($prenom)), MB_CASE_TITLE, "UTF-8"))), " -");
+    return mb_substr(trim(firstNoAccent(removeAccents(mb_convert_case(removeWeirdChar(removeNumber($prenom)), MB_CASE_TITLE, "UTF-8"))), " -"), 0, 20, 'UTF-8');
 }
 
 // formatage d'epreuve

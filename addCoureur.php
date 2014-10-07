@@ -8,8 +8,8 @@
 $title = "Ajout Coureur";
 include ('header.php');
 
-$pattern = "[AZERTYUIOPQSDFGHJKLMWXCVBNazertyuiopqsdfghjklmwxcvbnéèçàùôûî' -]{2,20}";
-//$pattern = "[a-zA-Z'- ]{2,20}";
+//$pattern = "[AZERTYUIOPQSDFGHJKLMWXCVBNazertyuiopqsdfghjklmwxcvbnéèçàùôûî' -]{2,20}";
+$pattern = "*{2,20}";
 
 $nom = formatNom(postGetter("nom"));
 $prenom = formatPrenom(postGetter("prenom"));
@@ -57,6 +57,51 @@ if($nom != null && $prenom != null && $pays != null){
     }
     else{
         echo "<h1>Coureur déjà présent dans la base</h1>";
+?>
+            <form method="post" action="" name="ajoutCoureur">
+                <table>
+                    <tr>
+                        <th>Nom du Coureur</th>
+                        <td><input value="<?php echo $nom; ?>" autofocus required type="text" size="20" title="20 max" name="nom" pattern="<?php echo $pattern; ?>"></td>
+                    </tr>
+                    <tr>
+                        <th>Prenom du Coureur</th>
+                        <td><input value="<?php echo $prenom; ?>" required type="text" size="20" name="prenom" pattern="<?php echo $pattern; ?>"></td>
+                    </tr>
+                    <tr>
+                        <th>Annee naissance</th>
+                        <td><input value="<?php echo $annee_n; ?>" type="number" name="annee_n" max="<?php echo date("Y"); ?>" min="1900"></td>
+                    </tr>
+                    <tr>
+                        <th>Pays</th>
+                        <td>
+                            <select required name="pays">
+                                <option value=''></option>
+                                <?php
+                                $req = 'SELECT code_tdf, nom FROM tdf_pays ORDER BY nom';
+                                $cur = ExecuterRequete($conn, $req);
+                                $nbLigne = LireDonnees1($cur, $tab);
+                                foreach($tab as $key => $val) {
+                                    if($val['CODE_TDF'] == $pays)
+                                        echo "<option selected value='".$val['CODE_TDF']."'>".$val['NOM']."</option>";
+                                    else
+                                        echo "<option value='".$val['CODE_TDF']."'>".$val['NOM']."</option>";
+                                }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Annee tour de France</th>
+                        <td><input value="<?php echo $annee_tdf; ?>" type="number" name="annee_tdf" pattern="^[0-1]{4}" min="<?php echo date("Y"); ?>"></td>
+                    </tr>
+                    <tr>
+                        <th><input name="submit" type="submit" value="Ajouter"></th>
+                        <td><input name="reset" type="reset" value="Vider les champs"></td>
+                    </tr>
+                </table>
+            </form>
+<?php
     }
 }
 else{
@@ -67,11 +112,11 @@ else{
                 <table>
                     <tr>
                         <th>Nom du Coureur</th>
-                        <td><input autofocus required type="text" size="20" name="nom" pattern="<?php echo $pattern; ?>"></td>
+                        <td><input autofocus required type="text" name="nom" pattern="<?php echo $pattern; ?>"></td>
                     </tr>
                     <tr>
                         <th>Prenom du Coureur</th>
-                        <td><input required type="text" size="20" name="prenom" pattern="<?php echo $pattern; ?>"></td>
+                        <td><input required type="text" name="prenom" pattern="<?php echo $pattern; ?>"></td>
                     </tr>
                     <tr>
                         <th>Annee naissance</th>

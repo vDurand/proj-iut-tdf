@@ -12,7 +12,7 @@
 // Connection a la base
 function OuvrirConnexion($session,$mdp,$instance)
 {
-    $conn = oci_connect($session, $mdp,$instance, "AL32UTF8");
+    $conn = oci_connect($session, $mdp,$instance, "AL32UTF8"); //AL32UTF8 WE8ISO8859P15
     //echo "<br>identifiant : $conn<br>";
     if (!$conn)
     {
@@ -28,7 +28,6 @@ function FermerConnexion($conn)
 {
     oci_close($conn);
 }
-
 /*********/
 /* QUERY */
 /*********/

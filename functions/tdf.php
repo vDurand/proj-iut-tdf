@@ -40,10 +40,22 @@ function existingCoureur($conn, $coureur)
         $anneeT = "='".$coureur['A_TDF']."'";
     $req = "select N_COUREUR from TDF_COUREUR where NOM like :nom and PRENOM like :prenom and CODE_TDF like :pays and ANNEE_NAISSANCE".$anneeN." and ANNEE_TDF".$anneeT;
     $cur = oci_parse($conn, $req);
+    if (!$cur)
+    {
+        $e = oci_error($conn);
+        print htmlentities($e['message']);
+        exit;
+    }
     oci_bind_by_name($cur, ":nom", $nom);
     oci_bind_by_name($cur, ":prenom", $prenom);
     oci_bind_by_name($cur, ":pays", $pays);
-    oci_execute($cur, OCI_DEFAULT);
+    $res = oci_execute($cur, OCI_DEFAULT);
+    if (!$res)
+    {
+        $e = oci_error($conn);
+        echo htmlentities($e['message']);
+        exit;
+    }
     $nbLigne = LireDonnees1($cur, $tab);
     if(empty($tab))
         return false;
@@ -57,11 +69,23 @@ function addCoureur($conn, $coureur)
     $dateNow = date('d/m/y', time());
     $req = "insert into tdf_coureur values($n_coureur, :nom, :prenom, null, :pays, null, :etu, to_date('$dateNow'))";
     $cur = oci_parse($conn, $req);
+    if (!$cur)
+    {
+        $e = oci_error($conn);
+        print htmlentities($e['message']);
+        exit;
+    }
     oci_bind_by_name($cur, ":nom", $coureur['NOM']);
     oci_bind_by_name($cur, ":prenom", $coureur['PRENOM']);
     oci_bind_by_name($cur, ":pays", $coureur['PAYS']);
     oci_bind_by_name($cur, ":etu", formatNom($_SESSION['user']));
-    oci_execute($cur, OCI_DEFAULT);
+    $res = oci_execute($cur, OCI_DEFAULT);
+    if (!$res)
+    {
+        $e = oci_error($conn);
+        echo htmlentities($e['message']);
+        exit;
+    }
 
     if($coureur['A_NAI'] != null && $cur){
         $annee_n = $coureur['A_NAI'];

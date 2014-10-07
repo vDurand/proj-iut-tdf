@@ -21,7 +21,7 @@ $req = 'SELECT * FROM tdf_coureur order by n_coureur desc';
 $cur = ExecuterRequete($conn, $req);
 $nbLigne = LireDonnees1($cur, $tab);
 ?>
-<table style="text-align: center;">
+<table rules="all" frame="box" style="text-align: center;">
     <tr>
         <td>N_C</td>
         <td>NOM</td>
