@@ -107,6 +107,30 @@ function firstNoAccent($a)
     return trim($d, "'- ");
 }
 
+// http://php.net/manual/fr/function.str-shuffle.php
+function unicode_shuffle($string, $chars, $format = 'UTF-8')
+{
+    for($i=0; $i<$chars; $i++)
+        $rands[$i] = rand(0, mb_strlen($string, $format));
+
+    $s = NULL;
+
+    foreach($rands as $r)
+        $s.= mb_substr($string, $r, 1, $format);
+
+    return $s;
+}
+// http://stackoverflow.com/questions/4356289/php-random-string-generator
+function generateRandomString($length = 10) {
+    /*$characters = '\'- abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+    }
+    return $randomString;*/
+    return mb_substr(unicode_shuffle("'- abcdèefgh ijklmnéopqrs tuvwxyzABéCDèEFGHIJ KLMNOPQRèSTUV WXYZéèàù", 20), 0, $length, 'UTF-8');
+}
+
 // formatage du nom
 function formatNom($nom)
 {
@@ -122,7 +146,7 @@ function formatPrenom($prenom)
 // formatage d'epreuve
 function formatEpreuve($nom)
 {
-    return strtoupper(noAccents(trim(firstNoAccent(removeAccents(removeWeirdChar($nom))), " -")));
+    return mb_substr(strtoupper(noAccents(trim(firstNoAccent(removeAccents(removeWeirdChar($nom))), " -"))), 0, 20, 'UTF-8');
 }
 /*$tab = array("Ébé-ébé","ébé-ébé","ébé-Ébé","éÉé-Ébé","'éÉ'é-É'bé'","'éæé-É'bé'", "'éæé-É'Ŭé'", "'é !é-É'Ŭé'", "éé''éé--uù  gg", "DE LA TR€UC", "DE LA TRUC", "ééééééééééééééééééééééééééééééééééééééééééééééé");
 foreach($tab as $tab){

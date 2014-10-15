@@ -14,6 +14,22 @@ function getNCoureurMax($conn)
     return $tab[0]['MAX'];
 }
 
+function getNEquipeMax($conn)
+{
+    $req = 'select max(n_equipe) as max from tdf_equipe';
+    $cur = ExecuterRequete($conn, $req);
+    $nbLigne = LireDonnees1($cur, $tab);
+    return $tab[0]['MAX'];
+}
+
+function getNSponsorMax($conn, $n)
+{
+    $req = 'select max(N_SPONSOR) as MAX from tdf_sponsor where n_equipe='.$n;
+    $cur = ExecuterRequete($conn, $req);
+    $nbLigne = LireDonnees1($cur, $tab);
+    return $tab[0]['MAX'];
+}
+
 function hasParticipation($conn, $ncoureur)
 {
     $req = "select N_DOSSARD from TDF_PARTICIPATION where N_COUREUR = $ncoureur";
@@ -158,6 +174,34 @@ function addEpreuve($conn, $epreuve)
     oci_bind_by_name($cur, ":tdfa", $epreuve['PARR']);
     //oci_bind_by_name($cur, ":jour", $epreuve['JOUR']);
     oci_bind_by_name($cur, ":cat", $epreuve['CAT']);
+    oci_bind_by_name($cur, ":etu", formatNom($_SESSION['user']));
+    oci_execute($cur, OCI_DEFAULT);
+    $committed = oci_commit($conn);
+    return $cur;
+}
+
+function addEquipe($conn, $equipe)
+{
+    $req = "insert into tdf_equipe values(:nequipe, :annee, null)";
+    $cur = oci_parse($conn, $req);
+    oci_bind_by_name($cur, ":annee", $equipe['ANNEE']);
+    oci_bind_by_name($cur, ":nequipe", $equipe['NEQUIPE']);
+    oci_execute($cur, OCI_DEFAULT);
+    $committed = oci_commit($conn);
+    return $cur;
+}
+
+function addSponsor($conn, $sponsor)
+{
+    $dateNow = date('d/m/y', time());
+    $req = "insert into tdf_sponsor values(:nequipe, :nsponsor, :nom, :nasponsor, :pays, :annee, :etu, to_date('$dateNow'))";
+    $cur = oci_parse($conn, $req);
+    oci_bind_by_name($cur, ":annee", $sponsor['ANNEE']);
+    oci_bind_by_name($cur, ":nequipe", $sponsor['NEQUIPE']);
+    oci_bind_by_name($cur, ":nsponsor", $sponsor['NSPONSOR']);
+    oci_bind_by_name($cur, ":nom", $sponsor['NOM']);
+    oci_bind_by_name($cur, ":nasponsor", $sponsor['NASPONSOR']);
+    oci_bind_by_name($cur, ":pays", $sponsor['PAYS']);
     oci_bind_by_name($cur, ":etu", formatNom($_SESSION['user']));
     oci_execute($cur, OCI_DEFAULT);
     $committed = oci_commit($conn);

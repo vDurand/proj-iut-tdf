@@ -40,21 +40,21 @@ else{
     ?>
 
     <h1>Ajouter une année</h1>
-    <form method="post" action="" name="ajoutAnnee">
-        <table>
-            <tr>
-                <th>Année</th>
-                <td><input autofocus required type="number" name="annee" pattern="^[0-1]{4}" min="<?php echo date("Y"); ?>" value="<?php echo date("Y"); ?>"></td>
-            </tr>
-            <tr>
-                <th>Jours de Repos</th>
-                <td><input required type="number" name="repos" max="365" min="0" value="0"></td>
-            </tr>
-            <tr>
-                <th><input name="submit" type="submit" value="Ajouter"></th>
-                <td><input name="reset" type="reset" value="Vider les champs"></td>
-            </tr>
-        </table>
+    <form method="post" action="" name="ajoutAnnee" class="ink-form">
+        <div class="control-group required">
+            <label for="annee">Année</label>
+            <div class="control">
+                <input autofocus required type="number" id="annee" name="annee" pattern="^[0-1]{4}" min="<?php echo date("Y"); ?>" value="<?php echo date("Y"); ?>">
+            </div>
+        </div>
+        <div class="control-group">
+            <label for="jrepos">Jours de Repos</label>
+            <div class="control">
+                <input required id="jrepos" type="number" name="repos" max="365" min="0" value="0">
+            </div>
+        </div>
+        <input class="ink-button green" name="submit" type="submit" value="Ajouter">
+        <input class="ink-button" name="reset" type="reset" value="Vider les champs">
     </form>
 <?php
 }

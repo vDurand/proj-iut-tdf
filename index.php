@@ -14,7 +14,7 @@ include ('header.php');
     <h1>Projet de PHP - 2A IUT Caen DUT Info</h1>
     <h3>Welcome <?php echo $_SESSION['user']; ?></h3>
     <li><a href="addCoureur.php">Ajout de coureur</a></li>
-    <li><a href="preview.php">Liste des coureurs</a></li>
+    <li><a href="viewCoureur.php">Liste des coureurs</a></li>
 </div>
 <?php
 include ('footer.php');

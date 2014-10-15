@@ -23,34 +23,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dbOCI.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/dbOCI.php">
+      <file leaf-file-name="viewCoureur.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/viewCoureur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="59" selection-start="298" selection-end="298" vertical-scroll-proportion="21.875" vertical-offset="660" max-vertical-offset="2280">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inputRules.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/inputRules.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="149" selection-start="4484" selection-end="4484" vertical-scroll-proportion="-18.0" vertical-offset="1338" max-vertical-offset="2145">
+            <state line="23" column="0" selection-start="622" selection-end="923" vertical-scroll-proportion="8.75" vertical-offset="555" max-vertical-offset="1440">
               <folding>
-                <element signature="e#6#107#0" expanded="true" />
+                <marker date="1413144435000" expanded="true" signature="263:310" placeholder="DELETE FROM ..." />
+                <marker date="1413144435000" expanded="true" signature="1274:1488" placeholder="SELECT co.N_..tdf_coureur..." />
+                <marker date="1413144435000" expanded="true" signature="1903:1931" placeholder="..." />
+                <marker date="1413144435000" expanded="true" signature="2314:2337" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preview.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/preview.php">
+      <file leaf-file-name="addSponsor.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addSponsor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="29" selection-start="599" selection-end="599" vertical-scroll-proportion="0.4207317" vertical-offset="0" max-vertical-offset="1050">
+            <state line="18" column="31" selection-start="417" selection-end="417" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="1410">
               <folding>
-                <element signature="e#601#628#0" expanded="true" />
-                <marker date="1412704140000" expanded="true" signature="263:310" placeholder="DELETE FROM ..." />
-                <marker date="1412704140000" expanded="true" signature="441:490" placeholder="SELECT * FRO..tdf_coureur..." />
+                <marker date="1413203750000" expanded="true" signature="761:974" placeholder="select cs.n_..tdf_sponsor..." />
+                <marker date="1413203750000" expanded="true" signature="2571:2618" placeholder="SELECT code_..tdf_pays..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addCoureur.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addCoureur.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="58" selection-start="875" selection-end="921" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="780">
+              <folding>
+                <marker date="1413142303000" expanded="true" signature="1006:1153" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addAnnee.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addAnnee.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="85" selection-start="1596" selection-end="1596" vertical-scroll-proportion="-26.416666" vertical-offset="206" max-vertical-offset="1005">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addEquipe.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addEquipe.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="96" column="12" selection-start="3314" selection-end="3314" vertical-scroll-proportion="-26.416666" vertical-offset="806" max-vertical-offset="1605">
+              <folding>
+                <marker date="1413206804000" expanded="true" signature="2672:2719" placeholder="SELECT code_..tdf_pays..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addEpreuve.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addEpreuve.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="182" column="53" selection-start="7858" selection-end="7858" vertical-scroll-proportion="0.6755725" vertical-offset="2199" max-vertical-offset="2985">
+              <folding>
+                <marker date="1413208834000" expanded="true" signature="2560:2607" placeholder="SELECT ANNEE..tdf_annee..." />
+                <marker date="1413208834000" expanded="true" signature="4217:4264" placeholder="SELECT code_..tdf_pays..." />
+                <marker date="1413208834000" expanded="true" signature="5533:5580" placeholder="SELECT code_..tdf_pays..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coureurForm.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coureurForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="24" selection-start="1642" selection-end="1905" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="122" column="33" selection-start="5129" selection-end="5129" vertical-scroll-proportion="-20.166666" vertical-offset="1346" max-vertical-offset="2145">
+              <folding>
+                <marker date="1413204610000" expanded="true" signature="3435:3476" placeholder="..." />
+                <marker date="1413204610000" expanded="true" signature="3741:3782" placeholder="..." />
+                <marker date="1413204610000" expanded="true" signature="4043:4084" placeholder="..." />
+                <marker date="1413204610000" expanded="true" signature="4343:4384" placeholder="..." />
+                <marker date="1413204610000" expanded="true" signature="4647:4688" placeholder="..." />
+                <marker date="1413204610000" expanded="true" signature="4950:4991" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+              <folding>
+                <marker date="1412759510000" expanded="true" signature="173:405" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -69,32 +142,39 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/assetsPDO.php" />
-        <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/assetsOCI.php" />
         <option value="$PROJECT_DIR$/assetsRules.php" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/functions/getter.php" />
-        <option value="$PROJECT_DIR$/editCoureur.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/functions/addAnnee.php" />
-        <option value="$PROJECT_DIR$/addAnnee.php" />
-        <option value="$PROJECT_DIR$/addEpreuve.php" />
-        <option value="$PROJECT_DIR$/functions/tdf.php" />
-        <option value="$PROJECT_DIR$/addSponsor.php" />
-        <option value="$PROJECT_DIR$/addCoureur.php" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/functions/dbOCI.php" />
-        <option value="$PROJECT_DIR$/functions/inputRules.php" />
         <option value="$PROJECT_DIR$/preview.php" />
+        <option value="$PROJECT_DIR$/viewEpreuve.php" />
+        <option value="$PROJECT_DIR$/doc/addEquipe.php" />
+        <option value="$PROJECT_DIR$/functions/inputRules.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/ink-3.1.0/css/ink-flex.min.css" />
+        <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/addCoureur.php" />
+        <option value="$PROJECT_DIR$/coureurForm.php" />
+        <option value="$PROJECT_DIR$/editCoureur.php" />
+        <option value="$PROJECT_DIR$/viewCoureur.php" />
+        <option value="$PROJECT_DIR$/addSponsor.php" />
+        <option value="$PROJECT_DIR$/functions/tdf.php" />
+        <option value="$PROJECT_DIR$/viewEquipe.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/addAnnee.php" />
+        <option value="$PROJECT_DIR$/addEquipe.php" />
+        <option value="$PROJECT_DIR$/addEpreuve.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="988" />
+    <option name="width" value="1680" />
+    <option name="height" value="967" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -122,6 +202,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -137,6 +218,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="projetTDF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetTDF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetTDF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ink-3.1.0" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -170,7 +265,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,6 +277,7 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -271,7 +366,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="988" extended-state="6" />
+    <frame x="0" y="22" width="1680" height="967" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -279,7 +374,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2662407" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20634921" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979977" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -311,47 +406,50 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/functions/dbOCI.php">
+    <entry file="file://$PROJECT_DIR$/functions/tdf.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="59" selection-start="290" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="2370">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="30" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1050" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/inputRules.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="1" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="855">
+        <state line="33" column="1" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="3210">
           <folding>
-            <element signature="e#6#107#0" expanded="true" />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select max(n..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select max(n..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select max(N..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select N_DOS..TDF_PARTICIPATION..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="UPDATE tdf_c..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="UPDATE tdf_c..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select * fro..TDF_ANNEE..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="UPDATE tdf_a..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select ANNEE..tdf_epreuve..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="41" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="510" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/dbOCI.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="6" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2370">
-          <folding />
+        <state line="133" column="68" selection-start="5874" selection-end="5899" vertical-scroll-proportion="0.0" vertical-offset="1421" max-vertical-offset="2220">
+          <folding>
+            <marker date="1413204610000" expanded="true" signature="3435:3476" placeholder="..." />
+            <marker date="1413204610000" expanded="true" signature="3741:3782" placeholder="..." />
+            <marker date="1413204610000" expanded="true" signature="4043:4084" placeholder="..." />
+            <marker date="1413204610000" expanded="true" signature="4343:4384" placeholder="..." />
+            <marker date="1413204610000" expanded="true" signature="4647:4688" placeholder="..." />
+            <marker date="1413204610000" expanded="true" signature="4950:4991" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preview.php">
+    <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="43" selection-start="0" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="675" />
+        <state line="9" column="16" selection-start="151" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="435" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/viewCoureur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="4680" />
+        <state line="31" column="43" selection-start="0" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="675" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/dbPDO.php">
@@ -363,8 +461,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="76" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1650">
           <folding>
-            <marker date="1412699178000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
-            <marker date="1412699178000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
+            <marker date="1413142303000" expanded="true" signature="1006:1153" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -377,9 +474,7 @@
     <entry file="file://$PROJECT_DIR$/functions/inputRules.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="14" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="930">
-          <folding>
-            <element signature="e#6#107#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -390,19 +485,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/dbOCI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="6" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="2370">
-          <folding />
-        </state>
+        <state line="38" column="6" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="2370" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preview.php">
+    <entry file="file://$PROJECT_DIR$/viewCoureur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="57" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="390" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="4680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/dbPDO.php">
@@ -414,8 +502,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="23" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <folding>
-            <marker date="1412699178000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
-            <marker date="1412699178000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
+            <marker date="1413142303000" expanded="true" signature="1006:1153" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -423,9 +510,7 @@
     <entry file="file://$PROJECT_DIR$/functions/inputRules.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="12" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="630">
-          <folding>
-            <element signature="e#6#107#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -436,19 +521,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/dbOCI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="1320" selection-end="1613" vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2370">
-          <folding />
-        </state>
+        <state line="70" column="0" selection-start="1320" selection-end="1613" vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2370" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preview.php">
+    <entry file="file://$PROJECT_DIR$/viewCoureur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="25" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="4680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/dbPDO.php">
@@ -460,22 +538,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="15" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <folding>
-            <marker date="1412699178000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
-            <marker date="1412699178000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
+            <marker date="1413142303000" expanded="true" signature="1006:1153" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/dbOCI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2370">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="305" column="22" selection-start="5801" selection-end="5801" vertical-scroll-proportion="0.0" vertical-offset="3857" max-vertical-offset="4680" />
+        <state line="24" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2370" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/dbPDO.php">
@@ -487,17 +557,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="2" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
           <folding>
-            <marker date="1412699178000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
-            <marker date="1412699178000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
+            <marker date="1413142303000" expanded="true" signature="1006:1153" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/dbOCI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2370">
-          <folding />
-        </state>
+        <state line="24" column="0" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2370" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/dbPDO.php">
@@ -525,22 +592,17 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2445" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="22" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4680" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/dbPDO.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="5" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1770" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="18" selection-start="3740" selection-end="3740" vertical-scroll-proportion="0.83516484" vertical-offset="426" max-vertical-offset="1245" />
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="18" selection-start="3740" selection-end="3740" vertical-scroll-proportion="0.83516484" vertical-offset="426" max-vertical-offset="1245" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/getter.php">
@@ -553,107 +615,172 @@
         <state line="44" column="0" selection-start="2092" selection-end="2092" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="8355" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/editCoureur.php">
+    <entry file="file://$PROJECT_DIR$/functions/dbOCI.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="51" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1995">
-          <folding>
-            <marker date="1411826054000" expanded="true" signature="-1:-1" placeholder="UPDATE tdf_c..." />
-            <marker date="1411826054000" expanded="true" signature="-1:-1" placeholder="UPDATE tdf_c..." />
-            <marker date="1411826054000" expanded="true" signature="-1:-1" placeholder="UPDATE tdf_c..." />
-            <marker date="1411826054000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tdf_coureur..." />
-            <marker date="1411826054000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1411826054000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
-          </folding>
+        <state line="14" column="59" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="2355" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ink-3.1.0/css/ink.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ink-3.1.0/css/ink-flex.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7051" column="22" selection-start="166387" selection-end="166387" vertical-scroll-proportion="0.0" vertical-offset="105095" max-vertical-offset="129255">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="225" selection-end="225" vertical-scroll-proportion="0.2195122" vertical-offset="0" max-vertical-offset="820">
-          <folding />
-        </state>
+        <state line="18" column="96" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="420" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addAnnee.php">
+    <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="15" selection-start="842" selection-end="842" vertical-scroll-proportion="0.5609756" vertical-offset="185" max-vertical-offset="1005">
-          <folding />
-        </state>
+        <state line="58" column="4" selection-start="1434" selection-end="1584" vertical-scroll-proportion="0.7621951" vertical-offset="170" max-vertical-offset="990" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addSponsor.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="23" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addEpreuve.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="52" selection-start="2206" selection-end="2206" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="2490">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="844">
           <folding>
-            <marker date="1412326726000" expanded="true" signature="-1:-1" placeholder="SELECT ANNEE..tdf_annee..." />
-            <marker date="1412326726000" expanded="true" signature="-1:-1" placeholder="SELECT ANNEE..tdf_annee..." />
-            <marker date="1412326726000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
-            <marker date="1412326726000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
+            <marker date="1412759510000" expanded="true" signature="173:405" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editCoureur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="36" selection-start="1697" selection-end="1703" vertical-scroll-proportion="0.5494368" vertical-offset="296" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewEquipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="36" selection-start="3105" selection-end="3105" vertical-scroll-proportion="-24.625" vertical-offset="669" max-vertical-offset="1515">
+          <folding>
+            <marker date="1413204345000" expanded="true" signature="-1:-1" placeholder="select cs.n_..tdf_sponsor..." />
+            <marker date="1413204345000" expanded="true" signature="-1:-1" placeholder="select n_equ..vt_equipe..." />
+            <marker date="1413204345000" expanded="true" signature="-1:-1" placeholder="select cs.n_..tdf_sponsor..." />
+            <marker date="1413204345000" expanded="true" signature="-1:-1" placeholder="select n_equ..vt_equipe..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="33" selection-start="5129" selection-end="5129" vertical-scroll-proportion="-20.166666" vertical-offset="1346" max-vertical-offset="2145">
+          <folding>
+            <marker date="1413204610000" expanded="true" signature="3435:3476" placeholder="..." />
+            <marker date="1413204610000" expanded="true" signature="3741:3782" placeholder="..." />
+            <marker date="1413204610000" expanded="true" signature="4043:4084" placeholder="..." />
+            <marker date="1413204610000" expanded="true" signature="4343:4384" placeholder="..." />
+            <marker date="1413204610000" expanded="true" signature="4647:4688" placeholder="..." />
+            <marker date="1413204610000" expanded="true" signature="4950:4991" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addCoureur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="260" selection-end="260" vertical-scroll-proportion="0.20121951" vertical-offset="0" max-vertical-offset="2385">
+        <state line="29" column="58" selection-start="875" selection-end="921" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="780">
           <folding>
-            <marker date="1412699178000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
-            <marker date="1412699178000" expanded="true" signature="-1:-1" placeholder="SELECT code_..tdf_pays..." />
+            <marker date="1413142303000" expanded="true" signature="1006:1153" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="2" selection-start="997" selection-end="997" vertical-scroll-proportion="0.75" vertical-offset="0" max-vertical-offset="820">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/tdf.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="22" selection-start="2322" selection-end="2333" vertical-scroll-proportion="0.40243903" vertical-offset="810" max-vertical-offset="2475">
+        <state line="124" column="45" selection-start="3633" selection-end="3633" vertical-scroll-proportion="-12.5" vertical-offset="1485" max-vertical-offset="3135">
+          <folding>
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select max(n..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select max(n..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select max(N..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select N_DOS..TDF_PARTICIPATION..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="UPDATE tdf_c..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="UPDATE tdf_c..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select * fro..TDF_ANNEE..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="UPDATE tdf_a..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="select ANNEE..tdf_epreuve..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1413204132000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addAnnee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="85" selection-start="1596" selection-end="1596" vertical-scroll-proportion="-26.416666" vertical-offset="206" max-vertical-offset="1005">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
+    <entry file="file://$PROJECT_DIR$/humans.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="107" selection-end="107" vertical-scroll-proportion="0.1097561" vertical-offset="0" max-vertical-offset="855">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="823">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions/dbOCI.php">
+    <entry file="file://$PROJECT_DIR$/addEquipe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="59" selection-start="298" selection-end="298" vertical-scroll-proportion="21.875" vertical-offset="660" max-vertical-offset="2280">
-          <folding />
+        <state line="96" column="12" selection-start="3314" selection-end="3314" vertical-scroll-proportion="-26.416666" vertical-offset="806" max-vertical-offset="1605">
+          <folding>
+            <marker date="1413206804000" expanded="true" signature="2672:2719" placeholder="SELECT code_..tdf_pays..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/inputRules.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="149" selection-start="4484" selection-end="4484" vertical-scroll-proportion="-18.0" vertical-offset="1338" max-vertical-offset="2145">
+        <state line="150" column="91" selection-start="5596" selection-end="5597" vertical-scroll-proportion="2.8505898" vertical-offset="0" max-vertical-offset="2430">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewCoureur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="622" selection-end="923" vertical-scroll-proportion="8.75" vertical-offset="555" max-vertical-offset="1440">
           <folding>
-            <element signature="e#6#107#0" expanded="true" />
+            <marker date="1413144435000" expanded="true" signature="263:310" placeholder="DELETE FROM ..." />
+            <marker date="1413144435000" expanded="true" signature="1274:1488" placeholder="SELECT co.N_..tdf_coureur..." />
+            <marker date="1413144435000" expanded="true" signature="1903:1931" placeholder="..." />
+            <marker date="1413144435000" expanded="true" signature="2314:2337" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/preview.php">
+    <entry file="file://$PROJECT_DIR$/addSponsor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="29" selection-start="599" selection-end="599" vertical-scroll-proportion="0.4207317" vertical-offset="0" max-vertical-offset="1050">
+        <state line="18" column="31" selection-start="417" selection-end="417" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="1410">
           <folding>
-            <element signature="e#601#628#0" expanded="true" />
-            <marker date="1412704140000" expanded="true" signature="263:310" placeholder="DELETE FROM ..." />
-            <marker date="1412704140000" expanded="true" signature="441:490" placeholder="SELECT * FRO..tdf_coureur..." />
+            <marker date="1413203750000" expanded="true" signature="761:974" placeholder="select cs.n_..tdf_sponsor..." />
+            <marker date="1413203750000" expanded="true" signature="2571:2618" placeholder="SELECT code_..tdf_pays..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coureurForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="24" selection-start="1642" selection-end="1905" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addEpreuve.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="53" selection-start="7858" selection-end="7858" vertical-scroll-proportion="0.6755725" vertical-offset="2199" max-vertical-offset="2985">
+          <folding>
+            <marker date="1413208834000" expanded="true" signature="2560:2607" placeholder="SELECT ANNEE..tdf_annee..." />
+            <marker date="1413208834000" expanded="true" signature="4217:4264" placeholder="SELECT code_..tdf_pays..." />
+            <marker date="1413208834000" expanded="true" signature="5533:5580" placeholder="SELECT code_..tdf_pays..." />
           </folding>
         </state>
       </provider>
